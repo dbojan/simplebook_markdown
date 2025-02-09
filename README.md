@@ -78,7 +78,8 @@
 <p>For left bracket, that is not part of the &#91;number] use &amp;#91; More info here: <a href="https://www.toptal.com/designers/htmlarrows/punctuation/left-bracket/">https://www.toptal.com/designers/htmlarrows/punctuation/left-bracket/</a></p>
  <h2 id="toc16">Parsing file name</h2>
 <p>By default parsing author - title.txt will parse as author and title. </p>
-<p>Author - series 3 - my title.txt, will also parse to 'author' and title: 'series 3 - my title'</p>
+<p>Test Author - Series Name 3 - Best Book.txt, will also parse to 'author' and title: 'series 3 - my title'</p>
+ <table border=1>  <tr><td>Test Author - Series Name 3 - Best Book.txt</td> <td>  &lt;head>&lt;meta name="author" content="Test Author"> <br> &lt;title>Series Name - 3 - Best Book&lt;/title>&lt;/head>   </td></tr></table>
  <h2 id="toc17">Conversion</h2>
 <p>To convert txt to html, drag and drop your .txt file on .bat file.</p>
 <p>You can then convert .html to .mobi using kindlegen:<br><code><br>kindlegen.exe "Test Author - Series Name - 3 - Best Book.html" -dont_append_source -o "Test Author - Series Name - 3 - Best Book.mobi"<br></code></p>
