@@ -16,7 +16,7 @@
 <p>To add more tags (tables, bold, italic, lists, code ...) use html code.</p>
 <p>Or add custom tags in .py file.</p>
  <h2 id="toc4">Installing</h2>
-<p>Download zip file (right click, save link as), unpack.</p>
+<p>Download <a href="https://github.com/dbojan/simplebook_markdown/raw/refs/heads/main/convert_simplebook_to_html.zip">zip file</a> (right click, save link as), unpack.</p>
 <p>To convert txt to html, drag and drop your .txt file on .bat file.</p>
 <p>You must have Python installed <a href="https://www.python.org/">https://www.python.org/</a></p>
  <h2 id="toc5">Tags supported</h2>
@@ -89,6 +89,7 @@
 <p>-1stPage2000 <a href="https://mega.nz/folder/xGESQQYL#rAlBgQ6QM-FJUhFdXW7Z5g">https://mega.nz/folder/xGESQQYL#rAlBgQ6QM-FJUhFdXW7Z5g</a><br>-Seamonkey (Look in menu "windows/composer") <a href="https://www.seamonkey-project.org/">https://www.seamonkey-project.org/</a></p>
  <h2 id="toc19">Text editor:</h2>
 <p>-Notepad++ <a href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a></p>
+<p>If you are reading this on github, this README.md was made by copy pasting html file source from notepad++, and removing prefix text containing styles.</p>
  <a id="helpertop1" href="#helperbottom1"></a>          <div id="fb1"><a href="#f1">1.</a> Kindlegen can be found in the Kindle previewer package, unzip the installation and look for kindlegen.exe</div>                 <a id="helperbottom1" href="#helpertop1"></a>
  <a id="helpertop2" href="#helperbottom2"></a>          <div id="fb2"><a href="#f2">2.</a> Footnotes are ...</div>                 <a id="helperbottom2" href="#helpertop2"></a>
 </body>
