@@ -70,7 +70,7 @@
 <p>Paragraph texts are by default aligned justify, images center, headings left, but that can be changed by editing .py file in notepad++.</p>
 <p>Custom paragraph text align center:</p>
  <table border=1>  <tr><td>.pc Some text, centered horizontally</td> <td> &lt;p style="text-align:center !important;">Some text, centered horizontally&lt;/p></td></tr></table>
- <p style="text-align:center !important;">Some text, centered horizontally</p>
+ <p style="text-align:center !important;">Some text, centered horizontally<br> <br> <p align="center">text above will align properly html browser, but not in github markdown with removed headers, <br>  but this one, with &lt;p align="center"> will </p></p>
  <h2 id="toc15">Typing</h2>
 <p>&lt;p> will not be added to the text lines which start with space. Newline &lt;br> <b>will</b> be added.</p>
 <p>If there are two lines separated with a line that contains only one space, all three lines will be joined into a paragraph. New line (&lt;br>) will be added after each line.</p>
