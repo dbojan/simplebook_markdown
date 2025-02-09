@@ -70,7 +70,7 @@
 <p>Paragraph texts are by default aligned justify, images center, headings left, but that can be changed by editing .py file in notepad++.</p>
 <p>Custom paragraph text align center:</p>
  <table border=1>  <tr><td>.pc Some text, centered horizontally</td> <td> &lt;p style="text-align:center !important;">Some text, centered horizontally&lt;/p></td></tr></table>
- <p style="text-align:center !important;">Some text, centered horizontally<br> <br> <p align="center">text above will align properly html browser, but not in github markdown with removed headers, <br>  but this one, with &lt;p align="center"> will </p></p>
+ <p style="text-align:center !important;">Some text, centered horizontally (displayed incorrectly in github md to html, but working fine in browsers, or here with align=center ...)</p>
  <h2 id="toc15">Typing</h2>
 <p>&lt;p> will not be added to the text lines which start with space. Newline &lt;br> <b>will</b> be added.</p>
 <p>If there are two lines separated with a line that contains only one space, all three lines will be joined into a paragraph. New line (&lt;br>) will be added after each line.</p>
@@ -90,6 +90,7 @@
  <h2 id="toc19">Text editor:</h2>
 <p>-Notepad++ <a href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a></p>
 <p>If you are reading this on github, this README.md was made by copy pasting html file source from notepad++, and removing prefix text containing styles.</p>
+<p>If you are having problems, make sure there are no single spaces at the start of the line. Click on "Show All Characters" in notepad++ (looks like blue reverse P)</p>
  <a id="helpertop1" href="#helperbottom1"></a>          <div id="fb1"><a href="#f1">1.</a> Kindlegen can be found in the Kindle previewer package, unzip the installation and look for kindlegen.exe</div>                 <a id="helperbottom1" href="#helpertop1"></a>
  <a id="helpertop2" href="#helperbottom2"></a>          <div id="fb2"><a href="#f2">2.</a> Footnotes are ...</div>                 <a id="helperbottom2" href="#helpertop2"></a>
 </body>
