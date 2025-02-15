@@ -1,4 +1,3 @@
-
 <body>
  <h1 id="toc1">simplebook_markdown</h1>
 <p>Simple markdown for converting txt to html. Convertor included. </p>
@@ -26,7 +25,7 @@
 <p>Block tags:<br>-have to start at the start of the line, followed by space, and content:<br>-have to be preceded and followed by an empty line:<br>-<b>all text</b> will be surrounded by tag, <b>including</b> text after image.jpg, if there is any. You can add image description in the next line using ".pc description":<br>-If there is a line starting with space between two line, it will be joined in a single block, and will be rendered as such, with newline (&lt;br>) between lines.</p>
 <p>-heading tags. Aligned center by default (using included css rules).</p>
 <p><table border=1>  <tr><td>.i flower.png</td>     <td>&lt;img src="flower.png"></td> </tr>  <tr><td>.1 This is heading size 1</td>     <td>&lt;h1 >This is heading size 1&lt;/h1></td> </tr>  <tr><td>.2 This is heading size 2</td>     <td>&lt;h2 >This is heading size 2&lt;/h2></td> </tr>  <tr><td>.3 This is heading size 3</td>     <td>&lt;h3 >This is heading size 3&lt;/h3></td> </tr>  <tr><td>.4 This is heading size 4</td>     <td>&lt;h4 >This is heading size 4&lt;/h4></td> </tr> </table></p>
- <img src="flower.png">
+<p><img src="flower.png"></p>
  <h1 id="toc6">This is heading size 1</h1>
  <h2 id="toc7">This is heading size 2</h2>
  <h3 id="toc8">This is heading size 3</h3>
@@ -39,10 +38,10 @@
  
 <p>-Horizontal line, with space after .*</p>
  <table border=1>  <tr><td>.* </td> <td>&lt;hr></td></tr></table>
- <hr>
+<p><hr></p>
 <p>-Table of contents (toc).<br>Make sure to add '.t ' (with space after t) at the location you want to place your toc.<br>Toc is created from headings (1-4) tags, with toc entry ID added automatically.</p>
 <p><table border=1>  <tr><td>.t </td>  <td> &lt;div>&lt;a href="#toc1">- simplebook_markdown&lt;/a>&lt;/div><br> &lt;div>&lt;a href="#toc2">- What is it&lt;/a>&lt;/div> <br> &lt;div>&lt;a href="#toc3">- Reason&lt;/a>&lt;/div> <br> &lt;div>&lt;a href="#toc4">- Tags supported&lt;/a>&lt;/div> <br> &lt;div>&lt;a href="#toc5">- This is heading size 1&lt;/a>&lt;/div> </td>  </tr> </table> </p>
- <div style="text-align:left !important"><a href="#toc1">- simplebook_markdown</a></div>
+<p></p> <div style="text-align:left !important"><a href="#toc1">- simplebook_markdown</a></div>
  <div style="text-align:left !important"><a href="#toc2">- What is it</a></div>
  <div style="text-align:left !important"><a href="#toc3">- Reason</a></div>
  <div style="text-align:left !important"><a href="#toc4">- Installing</a></div>
@@ -62,7 +61,7 @@
  <div style="text-align:left !important"><a href="#toc18">- Html editors:</a></div>
  <div style="text-align:left !important"><a href="#toc19">- Text editor:</a></div>
  <div style="text-align:left !important"><a href="#toc20">- Misc</a></div>
- <div style="text-align:left !important"><a href="#toc21">- Changes</a></div>
+ <div style="text-align:left !important"><a href="#toc21">- Changes</a></div><p></p>
  <h2 id="toc10">Custom block tags, enabled by default</h2>
 <p>Heading tags, which do the same as above, size 1-4:</p>
 <p><table border=1>  <tr><td># This is heading size 1</td> <td>&lt;h1 >This is heading size 1&lt;/h1></td> </tr>  <tr><td>## This is heading size 2</td> <td>&lt;h2 >This is heading size 2&lt;/h2></td> </tr>  <tr><td>### This is heading size 3</td> <td>&lt;h3 >This is heading size 3&lt;/h3></td> </tr>  <tr><td>#### This is heading size 4</td> <td>&lt;h4 >This is heading size 4&lt;/h4></td> </tr> </table></p>
@@ -100,9 +99,10 @@
 <p>If you are having problems, make sure there are no single spaces at the start of the line. Click on "Show All Characters" in notepad++ (looks like blue reverse P)</p>
  <h2 id="toc20">Misc</h2>
 <p>You can keep filename extension as .md especially if using notepad++, but you probably should not try converting this .md using pandoc.</p>
-<p>If your document ends with a picture, and you have footnotes, you should probably add newline and ".p " after the last image, so there is some space between last image and footnotes.</p>
  <h2 id="toc21">Changes</h2>
-<p>2025-02-14-1<br>-added option to use span+br for toc, since it can be surrounded by tag.<br> by default div is used, without p tag.</p>
+<p>2025-02-15-2<br>-you can set option to add paragraph in front of elements (empty_space)</p>
 <p>2025-02-15-1<br>-bugfixes<br>-added custom tag, simple paragraph text, when you need to specify one, like for empty paragraph</p>
- <a id="helpertop1" href="#helperbottom1"></a>          <div id="fb1"><a href="#f1">1.</a> Kindlegen can be found in the Kindle previewer package, unzip the installation and look for kindlegen.exe</div>                 <a id="helperbottom1" href="#helpertop1"></a>
- <a id="helpertop2" href="#helperbottom2"></a>          <div id="fb2"><a href="#f2">2.</a> Footnotes are ...</div>                 <a id="helperbottom2" href="#helpertop2"></a></body>
+<p>2025-02-14-1<br>-added option to use span+br for toc, since it can be surrounded by tag.<br> by default div is used, without p tag.</p>
+<p></p>
+<a id="helpertop1" href="#helperbottom1"></a>          <div id="fb1"><a href="#f1">1.</a> Kindlegen can be found in the Kindle previewer package, unzip the installation and look for kindlegen.exe</div>                 <a id="helperbottom1" href="#helpertop1"></a>
+<a id="helpertop2" href="#helperbottom2"></a>          <div id="fb2"><a href="#f2">2.</a> Footnotes are ...</div>                 <a id="helperbottom2" href="#helpertop2"></a></body>
