@@ -2,7 +2,6 @@
  <h1 id="toc1">simplebook_markdown</h1>
 <p>Simple markdown for converting txt to html. Convertor included. </p>
 <p>Written in Python.</p>
-<p>#2025-02-14-1</p>
  <h2 id="toc2">What is it</h2>
 <p>It is a simple markdown convertor, made for converting scanned/written text to ebooks.</p>
 <p>Each paragraph is separated by an empty line.</p>
@@ -96,9 +95,10 @@
 <p>If you are reading this on github, this README.md was made by copy pasting html file source from notepad++, and removing prefix text containing styles.</p>
 <p>If you are having problems, make sure there are no single spaces at the start of the line. Click on "Show All Characters" in notepad++ (looks like blue reverse P)</p>
  <h2 id="toc20">Misc</h2>
-<p>You can keep filename extension as .md, especially if using notepad++, but you probably should not try converting this .md using pandoc.</p>
+<p>You can keep filename extension as .md especially if using notepad++, but you probably should not try converting this .md using pandoc.</p>
+<p>If your document ends with a picture, and you have footnotes, you should probably add newline and ".p " after the last image, so there is some space between last image and footnotes.</p>
  <h2 id="toc21">Changes</h2>
-<p>2025-02-14-1</p>
-<p>-added option to use span+br for toc, since it can be surrounded by tag.<br> by default div is used, without p tag.</p>
+<p>2025-02-14-1<br>-added option to use span+br for toc, since it can be surrounded by tag.<br> by default div is used, without p tag.</p>
+<p>2025-02-15-1<br>-bugfixes</p>
  <a id="helpertop1" href="#helperbottom1"></a>          <div id="fb1"><a href="#f1">1.</a> Kindlegen can be found in the Kindle previewer package, unzip the installation and look for kindlegen.exe</div>                 <a id="helperbottom1" href="#helpertop1"></a>
  <a id="helpertop2" href="#helperbottom2"></a>          <div id="fb2"><a href="#f2">2.</a> Footnotes are ...</div>                 <a id="helperbottom2" href="#helpertop2"></a></body>
