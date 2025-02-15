@@ -1,3 +1,4 @@
+
 <body>
  <h1 id="toc1">simplebook_markdown</h1>
 <p>Simple markdown for converting txt to html. Convertor included. </p>
@@ -70,7 +71,7 @@
  <h3 id="toc13">This is heading size 3</h3>
  <h4 id="toc14">This is heading size 4</h4>
 <p>Paragraph texts are by default aligned justify, images center, headings left, but that can be changed by editing .py file in notepad++.</p>
-<p>Custom paragraph text:</p>
+<p>Custom tag, simple paragraph text:</p>
  <table border=1>  <tr><td>.p Some text</td> <td> &lt;p>Some text&lt;/p></td></tr></table>
  <p>Some text</p>
 <p>Custom paragraph text align center:</p>
@@ -102,6 +103,6 @@
 <p>If your document ends with a picture, and you have footnotes, you should probably add newline and ".p " after the last image, so there is some space between last image and footnotes.</p>
  <h2 id="toc21">Changes</h2>
 <p>2025-02-14-1<br>-added option to use span+br for toc, since it can be surrounded by tag.<br> by default div is used, without p tag.</p>
-<p>2025-02-15-1<br>-bugfixes</p>
+<p>2025-02-15-1<br>-bugfixes<br>-added custom tag, simple paragraph text, when you need to specify one, like for empty paragraph</p>
  <a id="helpertop1" href="#helperbottom1"></a>          <div id="fb1"><a href="#f1">1.</a> Kindlegen can be found in the Kindle previewer package, unzip the installation and look for kindlegen.exe</div>                 <a id="helperbottom1" href="#helpertop1"></a>
  <a id="helpertop2" href="#helperbottom2"></a>          <div id="fb2"><a href="#f2">2.</a> Footnotes are ...</div>                 <a id="helperbottom2" href="#helpertop2"></a></body>
