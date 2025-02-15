@@ -70,6 +70,9 @@
  <h3 id="toc13">This is heading size 3</h3>
  <h4 id="toc14">This is heading size 4</h4>
 <p>Paragraph texts are by default aligned justify, images center, headings left, but that can be changed by editing .py file in notepad++.</p>
+<p>Custom paragraph text:</p>
+ <table border=1>  <tr><td>.p Some text</td> <td> &lt;p>Some text&lt;/p></td></tr></table>
+ <p>Some text</p>
 <p>Custom paragraph text align center:</p>
  <table border=1>  <tr><td>.pc Some text, centered horizontally</td> <td> &lt;p style="text-align:center !important;">Some text, centered horizontally&lt;/p></td></tr></table>
  <p style="text-align:center !important;">Some text, centered horizontally (displayed incorrectly in github md to html, but working fine in browsers, or here with align=center ...)</p>
