@@ -60,10 +60,11 @@
  <div style="text-align:left !important"><a href="#toc17">- Parsing file name</a></div>
  <div style="text-align:left !important"><a href="#toc18">- Conversion</a></div>
  <div style="text-align:left !important"><a href="#toc19">- Html editors:</a></div>
- <div style="text-align:left !important"><a href="#toc20">- ebook viewers:</a></div>
+ <div style="text-align:left !important"><a href="#toc20">- ebook viewers for pc:</a></div>
  <div style="text-align:left !important"><a href="#toc21">- Text editor:</a></div>
  <div style="text-align:left !important"><a href="#toc22">- Misc</a></div>
- <div style="text-align:left !important"><a href="#toc23">- Changes</a></div><p></p>
+ <div style="text-align:left !important"><a href="#toc23">- Minimal <a href="https://en.wikipedia.org/wiki/EPUB#Open_Packaging_Format_2.0.1">opf</a> and ncx example for kindlegen:</a></div>
+ <div style="text-align:left !important"><a href="#toc24">- Changes</a></div><p></p>
  <h2 id="toc11">Custom block tags, enabled by default</h2>
 <p>Heading tags, which do the same as above, size 1-4:</p>
 <p><table border=1>  <tr><td># This is heading size 1</td> <td>&lt;h1 >This is heading size 1&lt;/h1></td> </tr>  <tr><td>## This is heading size 2</td> <td>&lt;h2 >This is heading size 2&lt;/h2></td> </tr>  <tr><td>### This is heading size 3</td> <td>&lt;h3 >This is heading size 3&lt;/h3></td> </tr>  <tr><td>#### This is heading size 4</td> <td>&lt;h4 >This is heading size 4&lt;/h4></td> </tr> </table></p>
@@ -97,15 +98,29 @@
 <p>ebook-convert.exe "Test Author - Series Name - 3 - Best Book.html" "Test Author - Series Name - 3 - Best Book.epub"<br>ebook-convert.exe "Test Author - Series Name - 3 - Best Book.html" "Test Author - Series Name - 3 - Best Book.mobi"<br></code></p>
  <h2 id="toc19">Html editors:</h2>
 <p>-1stPage2000 <a href="https://mega.nz/folder/xGESQQYL#rAlBgQ6QM-FJUhFdXW7Z5g">https://mega.nz/folder/xGESQQYL#rAlBgQ6QM-FJUhFdXW7Z5g</a><br>-Seamonkey (Look in menu "windows/composer") <a href="https://www.seamonkey-project.org/">https://www.seamonkey-project.org/</a></p>
- <h2 id="toc20">ebook viewers:</h2>
-<p>-calibre<br>-sumatra-pdf</p>
+ <h2 id="toc20">ebook viewers for pc:</h2>
+<p>-calibre (ebook-viewer.exe)<br>-sumatraPDF</p>
  <h2 id="toc21">Text editor:</h2>
 <p>-Notepad++ <a href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a></p>
 <p>If you are reading this on github, this README.md was made by copy pasting html file source from notepad++, and removing prefix text containing styles.</p>
 <p>If you are having problems, make sure there are no single spaces at the start of the line. Click on "Show All Characters" in notepad++ (looks like blue reverse P)</p>
  <h2 id="toc22">Misc</h2>
 <p>You can keep filename extension as .md especially if using notepad++, but you probably should not try converting this .md using pandoc.</p>
- <h2 id="toc23">Changes</h2>
+ <h2 id="toc23">Minimal <a href="https://en.wikipedia.org/wiki/EPUB#Open_Packaging_Format_2.0.1">opf</a> and ncx example for kindlegen:</h2>
+<p>Created from "Best Author - Best Book.txt':</p>
+<p>'Best Author - Best Book.opf' content:<br> <hr><br>&lt;?xml version="1.0"?></p>
+<p>&lt;package></p>
+<p>&emsp;&lt;metadata><br>&emsp;&emsp;&lt;dc:title>Best Book&lt;/dc:title><br>&emsp;&emsp;&lt;dc:language>en&lt;/dc:language><br>&emsp;&emsp;&lt;dc:creator>Best Author&lt;/dc:creator><br>&emsp;&lt;/metadata></p>
+<p>&emsp;&lt;manifest><br>&emsp;&emsp;&lt;item id="ncx" href="Best Author - Best Book.ncx" media-type="application/xml" /><br>&emsp;&emsp;&lt;item id="text1" href="Best Author - Best Book.html" media-type="text/html" /><br>&emsp;&lt;/manifest></p>
+<p>&emsp;&lt;spine toc="ncx"><br>&emsp;&emsp;&lt;itemref idref="text1" /><br>&emsp;&lt;/spine></p>
+<p>&lt;/package><br> <hr></p>
+<p>'Best Author - Best Book.ncx' content:<br> <hr><br>&lt;?xml version="1.0" encoding="UTF-8"?><br>&lt;ncx></p>
+<p>&emsp;&lt;navMap></p>
+<p>&emsp;&emsp;&lt;navPoint><br>&emsp;&emsp;&emsp;&lt;navLabel>&lt;text>Chapter 1 Title Here&lt;/text>&lt;/navLabel><br>&emsp;&emsp;&emsp;&lt;content src="Best Author - Best Book.html#toc1" /><br>&emsp;&emsp;&lt;/navPoint></p>
+<p>&emsp;&emsp;&lt;navPoint><br>&emsp;&emsp;&emsp;&lt;navLabel>&lt;text>Chapter 2 Title Here&lt;/text>&lt;/navLabel><br>&emsp;&emsp;&emsp;&lt;content src="Best Author - Best Book.html#toc2" /><br>&emsp;&emsp;&lt;/navPoint></p>
+<p>&emsp;&lt;/navMap></p>
+<p>&lt;/ncx><br> <hr><br>(If you wish, instead of '#toc1' and '#toc2', you can use '#chapter1' and '#chapter2', whatever your chapter anchors are in html file (usually, id inside of 'h1' or 'h2' tag at the start of each chapter).<br>Single html file is used for the book content, instead of multiple xhtml files.)</p>
+ <h2 id="toc24">Changes</h2>
 <p>2024-02-24-1<br>-added left, center, right align of text (.pl .pc .pr)<br>-added creating of minimal ncx and opf for kindlegen to mobi, so menu toc is created<br>-use: kindlegen.exe name.opf, <a href="https://en.wikipedia.org/wiki/EPUB#Open_Packaging_Format_2.0.1">opf example and info</a><br> (for pandoc/calibre to epub use html)<br>-added 'meta language' tag, because of kindlegen. Use -lang xx to change, default en.<br>-added command line options, (optional). -h to see them, or look at .py.</p>
 <p>2025-02-15-2<br>-you can set option to add paragraph in front of elements (empty_space)</p>
 <p>2025-02-15-1<br>-bugfixes<br>-added custom tag, simple paragraph text, when you need to specify one, like for empty paragraph</p>
