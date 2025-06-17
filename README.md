@@ -86,7 +86,7 @@
 <p>For left bracket, that is not part of the &#91;number] use &amp;#91; More info here: <a href="https://www.toptal.com/designers/htmlarrows/punctuation/left-bracket/">https://www.toptal.com/designers/htmlarrows/punctuation/left-bracket/</a></p>
  <h2 id="toc17">Parsing file name</h2>
 <p>By default parsing 'Test Author - Best Book.txt' will parse author='Test Author' and title='Best Book'. </p>
-<p>Test Author - Series Name 3 - Best Book.txt, will also parse to author='Test Author' and title='series 3 - my title'.</p>
+<p>Test Author - Series Name 3 - Best Book.txt, will also parse to author='Test Author' and title='Series Name 3 - Best Book'.</p>
  <table border=1>  <tr><td>Test Author - Series Name 3 - Best Book.txt</td> <td>  &lt;head>&lt;meta name="author" content="Test Author"> <br> &lt;title>Series Name - 3 - Best Book&lt;/title>&lt;/head>   </td></tr></table>
  <h2 id="toc18">Conversion</h2>
 <p>press windows + r, enter shell:sendto<br>it will open "C:\Users\your_user_name\AppData\Roaming\Microsoft\Windows\SendTo"<br>Copy shortcut to 'convert_simplebook_to_html.bat' there. Drag and drop file, select 'create shortcut here'</p>
